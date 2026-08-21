@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-area input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-area select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+.list-of-penalties ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-of-penalties li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.game-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game-level {
+  font-size: 18px;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.edit-button {
+  background: #4a90e2;
+}
+
+.delete-button {
+  background: #e74c3c;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  margin: 30px 0;
+}
+
+.isRepeat {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.isRepeat p {
+  font-weight: bold;
+}
+
+.repeat-button {
+  padding: 10px 25px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  background: white;
+  font-size: 15px;
+}
+
+.repeat-button.active {
+  background: #333;
+  color: white;
+}
+
+.gacha-button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  background: #222;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gacha-button:hover {
+  opacity: 0.85;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 25px;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: 12px;
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+.result-level {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.result-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .form-area {
+    flex-direction: column;
+  }
+
+  .list-of-penalties li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .game-buttons {
+    width: 100%;
+  }
+
+  .game-buttons button {
+    flex: 1;
+  }
+}
